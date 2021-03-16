@@ -2,18 +2,57 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>MMP 240 Class Website</title>
+    <title>Exercise 5</title>
+
+    <style>
+
+    #wrapper{
+      max-width:1170px;
+      margin:0 auto;
+    }
+      a{
+        color:green;
+      }
+
+    a:hover{
+      color:orange;
+    }
+
+    li a{
+      color:black;
+      text-decoration:none;
+    }
+    li a:hover{
+      color:black;
+      text-decoration:underline;
+    }
+
+    input:focus{
+      background-color:orange;
+    }
+     /* Add CSS code here */
+    </style>
+
   </head>
   <body>
-    <h1>MMP 240 Class Website</h1>
-      <img src="Zee.jpg" alt="Photo of Zaqanah" width="150">
-      <h2>Zaqanah Stephens</h2>
-      <p>Email: zaqanah.stephens@gmail.com</p>
-      <p>I am an aspiring digital marketer and full-time student at the Multimedia program at BMCC. My dream is to find a job in which I can use, and expand, my dream and coding skills.</p>
-      <!--update with new assignments throughout the semester-->
-      <ul>
-        <li><a href="recipe/recipe.html">Recipe Assignment</li>
-        <li><a href="exercise2/exercise2.html">Practice Exercise 2</a></li>
-      </ul>
+    <div id="wrapper">
+      <nav>
+        <ul>
+          <li><a href="#">BMCC</a></li>
+          <li><a href="#">BCC</a></li>
+          <li><a href="#">QCC</a></li>
+          <li><a href="#">Hostos</a></li>
+          <li><a href="#">LaGuardia</a></li>
+          <li><a href="#">Guttman</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h1>Borough of Manhattan Community College</h1>
+        <p><a href="https://www.bmcc.cuny.edu/">BMCC</a> is a college that is alive with ideas and innovation, and supportive of the innate human striving for self-improvement. We offer opportunity to those students who desire it and wish to strive for it.</p>
+        <h3>Request More Information</h3>
+        <input type="text" id="emailbox" name="emailbox" placeholder="Your email">
+        <button>Submit</button>
+      </div> <!-- .content -->
+    </div> <!-- #wrapper -->
   </body>
 </html>
