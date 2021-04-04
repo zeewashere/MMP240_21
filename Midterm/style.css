@@ -1,0 +1,113 @@
+body{
+    font-family: 'Nunito', sans-serif;
+    line-height:1.2em;
+}
+
+#wrapper{
+  max-width:1200px;
+  margin:0 auto;
+}
+
+  header{
+  background:
+   linear-gradient(90deg, rgba(63,85,123,1) 0, rgba(63,85,123,1) 300px, rgba(255,255,255,0) 600px),
+   url("images/Girlfriends.png") right top no-repeat;
+    height:400px;
+    padding:2.5em;
+    overflow: hidden;
+    text-align: left;
+
+}
+
+p{
+  margin-bottom:1em;
+}
+  h1 img{
+    max-width:100%;
+  }
+ #page-header p{
+   color:#fff;
+   width:20em;
+   text-align: left;
+ }
+ .btn{
+   display: block;
+   border:solid 1px hotpink;
+   width: 55px;
+   height:18px;
+   background-image: url("images/play.png");
+   background-repeat: no-repeat;
+   background-position: left;
+   color:#fff;
+   text-decoration: none;
+   text-align: center;
+   padding:8px;
+   padding-left: 20px;
+   border-radius: 8px;
+
+ }
+
+  .btn:hover{
+    background-color: hotpink;
+  }
+  nav{
+    background-color: #ac94b5;
+    padding:9px;
+    margin-bottom: 2em;
+  }
+  nav li{
+    display:inline;
+    border-right: solid 1px white;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+  nav li:last-child{
+    border: none;
+  }
+  nav li a{
+    color: white;
+    text-decoration: none;
+}
+
+  nav li a:hover{
+    color: #716996;
+    text-decoration: underline;
+}
+  nav a:visited{
+    color: White;
+  }
+
+  .col{
+    width: 48%;
+  }
+  .col-left{
+    float: left;
+  }
+  .col-right{
+    float: right;
+  }
+
+  footer{
+    clear: both;
+  }
+
+    h2{
+      font-size: 1.5em;
+      text-transform: uppercase;
+      margin-bottom: .5em;
+    }
+
+    h3{
+      font-weight: bold;
+    }
+
+    .tv-14{
+      border: solid 1px black;
+      padding:0 3px;
+      font-size: smaller;
+    }
+
+    main{
+      margin-bottom: 3em;
+      overflow: auto;
+    }
