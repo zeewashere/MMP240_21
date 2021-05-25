@@ -1,0 +1,268 @@
+/* CSS Styles */
+
+#wrapper{
+  max-width: 1200px;
+  padding: 1em;
+  position: relative;
+}
+
+
+p, h1, h2, h3, h4{
+  margin-bottom: 1em;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3 ,h4{
+  font-weight: bold;
+}
+
+.news h2{
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.events h2{
+  font-size: 1.5em;
+  text-decoration: underline;
+}
+
+.site-header{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.site-header a{
+  text-decoration: none;
+  color: #000;
+  font-weight: lighter;
+}
+
+.site-header h1 {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+.site-header h1 a{
+  text-decoration: none;
+  color: #000;
+}
+
+.menu{
+  display: none;
+}
+
+.show-menu{
+  background-color: transparent;
+  border: none;
+}
+
+.search-programs{
+min-height: 8em;
+border: solid 1px #ccc;
+border-radius: 10px;
+padding: 1em;
+margin-bottom: 1em;
+font-family: 'Ubuntu', sans-serif;
+}
+
+.search-programs h2{
+  font-size: 2em;
+}
+
+.search-dropdown li{
+  display: inline-block;
+  margin-right: 1.5em;
+  text-decoration: none;
+}
+
+.dropdown{
+  background-color: #474747;
+  padding: 0;
+  position: absolute;
+  display: none;
+  z-index: 1;
+
+}
+.dropdown li{
+  display: block;
+  border: solid 1px #949494;
+  border-radius: 2px;
+  padding: 0.5em 2em;
+  margin-right: 0;
+  color: #e3e3e3;
+  position: relative;
+  z-index: 1;
+
+}
+
+.dropdown li a{
+  text-decoration: none;
+  color: #e3e3e3;
+}
+.search-dropdown li:hover .dropdown{
+  display: block;
+}
+
+.search-title{
+  border: solid 1px #6e6e6e;
+  text-decoration: none;
+  color: #e3e3e3;
+  background-color: #808080;
+  padding: .2em;
+  padding-right: .7em;
+  padding-left: .5em;
+  border-radius: 5px;
+}
+.search-title img{
+  position: relative;
+  top: 8px;
+  left: 8px;
+
+}
+
+.hero-banner{
+  min-height: 12em;
+  padding: .5em;
+  margin-bottom: 1em;
+  background-color: #fff;
+  position: relative;
+}
+.hero-banner h3 a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2em;
+  border: 5em;
+  position:absolute;
+  top: 10%;
+  left: 5%;
+}
+
+.hero-banner img{
+  max-width: 100%
+
+}
+
+.events-item img{
+  width: 100%;
+}
+
+@media (min-width:768px){
+
+  .show-menu{
+    display: none;
+  }
+  .menu{
+    display: flex;
+  }
+  .menu li{
+    display: inline;
+    margin-right: 2em;
+  }
+
+  .layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 1em;
+  }
+
+} /*closing media query*/
+
+
+.btn{
+  text-transform: uppercase;
+  font-size: 1em;
+  color: white;
+  padding: .7em;
+  min-width: 6em;
+  border: none;
+  background-color: #03a5fc;
+  border-radius: 7px;
+  transition-property: background-color;
+  transition-duration: .5s;
+  position: absolute;
+  top:55%;
+  left: 5%;
+
+}
+.btn:hover{
+  background-color: navy;
+}
+
+.menubar a{
+  text-decoration: none;
+}
+.event-item a{
+  color: black;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card{
+  border: solid 1px #ccc;
+  padding: 0.5em;
+  width: 20%;
+  flex: 1 1 auto;
+  margin: 1em;
+  transition: background-color .5s ease-in,
+  box-shadow .5s ease-in;
+}
+
+
+.card:hover{
+  background-color: #c4c4c4;
+  box-shadow: 0 8px 20px #949494;
+}
+.responsive-img{
+  width: 100%;
+}
+
+.last-box{
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.queens{
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+@media screen and (max-width:480px) {
+
+  .cards-container{
+    padding: 0.5em;
+    flex-direction: column;
+  }
+.card{
+  width: 90%;
+  margin: 0;
+  margin-bottom: 1em;
+}
+  .hero-banner h3 a{
+  font-size: 1.5em;
+  }
+  .search-title {
+    padding-right: .3em;
+  }
+  .btn{
+    font-size: .7em;
+    color: white;
+    padding: .6em;
+    min-width: 5em;
+  }
+}/*closing media query 480px*/
+
+
+
+.footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #949494;
+  border: solid 1px #fff;
+  width: 100%;
+  color: #e3e3e3;
+}
